@@ -15,115 +15,225 @@
 </head>
 
 <body>
-  <div class="header-container">
-    <div class="header-content">
+  <div id="container" class="background-dark">
 
-      <section class="header">
+    <div class="header-container background-dark-top">
+      <div class="header-content">
 
-        <div class="header-right">
-          <h1 class="dark-theme-white fw-700">Social Media Dashboard</h1>
-          <p class="dark-mode-desaturated-blue fw-700">Total Followers: 23,004</p>
-        </div>
+        <section class="header">
 
-        <div class="toggle-mode">
-          <p class="dark-theme-white">Dark Mode</p>
-          <div class="toggle-container" id="toggle-container">
-            <div class="toggle-button" id="toggle"></div>
+          <div class="header-right">
+            <h1 class="dark-theme-text-white fw-700">Social Media Dashboard</h1>
+            <p class="dark-mode-desaturated-blue fw-700">Total Followers: 23,004</p>
           </div>
-        </div>
-    </div>
+          <hr class="background-dark">
+          <div class="toggle-mode">
+            <p class="dark-theme-text-white">Dark Mode</p>
+            <div class="toggle-container" id="toggle-container">
+              <div class="toggle-button" id="toggle"></div>
+            </div>
+          </div>
+      </div>
 
-    </section>
+      </section>
 
-    <!-- <div class="attribution">
+      <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </div> -->
 
-  </div>
-  <div class="followers-content">
-    <div class="big-card facebook">
-      <div>
-        <img src="./images/icon-facebook.svg" alt="facebook">
-        <p class="dark-mode-desaturated-blue fw-700">@nathanf</p>
-      </div>
-      <div>
-        <p class="dark-theme-white fw-700 followers-number">1987</p>
-        <p class="dark-mode-desaturated-blue followers-text">FOLLOWERS</p>
-      </div>
-      <div>
-        <img src="./images/icon-up.svg" alt="icon">
-        <p class="followers-diff-text-green">12 Today</p>
-      </div>
     </div>
-    <div class="big-card twitter">
-      <div>
-        <img src="./images/icon-twitter.svg" alt="facebook">
-        <p class="dark-mode-desaturated-blue fw-700">@nathanf</p>
-      </div>
-      <div>
-        <p class="dark-theme-white fw-700 followers-number">1044</p>
-        <p class="dark-mode-desaturated-blue followers-text">FOLLOWERS</p>
-      </div>
-      <div>
-        <img src="./images/icon-up.svg" alt="icon">
-        <p class="followers-diff-text-green">99 Today</p>
-      </div>
-    </div>
-
-    <div class="big-card instagram-wrap">
-      <div class="big-card instagram">
-
+    <div class="followers-content">
+      <div class="big-card facebook card-bg-dark">
         <div>
-          <img src="./images/icon-instagram.svg" alt="facebook">
-          <p class="dark-mode-desaturated-blue fw-700">Nathan F.</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+          <p class="dark-mode-desaturated-blue fw-700">@nathanf</p>
         </div>
-
         <div>
-          <p class="dark-theme-white fw-700 followers-number">11k</p>
+          <p class="dark-theme-text-white fw-700 followers-number">1987</p>
           <p class="dark-mode-desaturated-blue followers-text">FOLLOWERS</p>
         </div>
-
         <div>
           <img src="./images/icon-up.svg" alt="icon">
-          <p class="followers-diff-text-green">1099 Today</p>
+          <p class="followers-diff-text-green fw-700">12 Today</p>
+        </div>
+      </div>
+      <div class="big-card twitter card-bg-dark">
+        <div>
+          <img src="./images/icon-twitter.svg" alt="facebook">
+          <p class="dark-mode-desaturated-blue fw-700">@nathanf</p>
+        </div>
+        <div>
+          <p class="dark-theme-text-white fw-700 followers-number">1044</p>
+          <p class="dark-mode-desaturated-blue followers-text">FOLLOWERS</p>
+        </div>
+        <div>
+          <img src="./images/icon-up.svg" alt="icon">
+          <p class="followers-diff-text-green fw-700">99 Today</p>
+        </div>
+      </div>
+
+      <div class="big-card instagram-wrap">
+        <div class="big-card instagram card-bg-dark">
+
+          <div>
+            <img src="./images/icon-instagram.svg" alt="facebook">
+            <p class="dark-mode-desaturated-blue fw-700">Nathan F.</p>
+          </div>
+
+          <div>
+            <p class="dark-theme-text-white fw-700 followers-number">11k</p>
+            <p class="dark-mode-desaturated-blue followers-text">FOLLOWERS</p>
+          </div>
+
+          <div>
+            <img src="./images/icon-up.svg" alt="icon">
+            <p class="followers-diff-text-green fw-700">1099 Today</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="big-card youtube card-bg-dark">
+        <div>
+          <img src="./images/icon-youtube.svg" alt="facebook">
+          <p class="dark-mode-desaturated-blue fw-700">Nathan F.</p>
+        </div>
+        <div>
+          <p class="dark-theme-text-white fw-700 followers-number">8239</p>
+          <p class="dark-mode-desaturated-blue followers-text">SUBSCRIBERS</p>
+        </div>
+        <div>
+          <img src="./images/icon-down.svg" alt="icon">
+          <p class="followers-diff-text-red fw-700">144 Today</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview-container">
+      <h1 class="dark-theme-text-white fw-700">Overview - Today</h1>
+    </div>
+
+    <div class="overview-card-container">
+      <div class="small-card card-bg-dark">
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">87</p>
+          <div>
+            <img src="./images/icon-up.svg" alt="icon">
+            <p class="followers-diff-text-green fw-700">3%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-card card-bg-dark">
+
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Likes</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">52</p>
+          <div>
+            <img src="./images/icon-down.svg" alt="icon">
+            <p class="followers-diff-text-red fw-700">2%</p>
+          </div>
         </div>
 
       </div>
+
+      <div class="small-card card-bg-dark">
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Likes</p>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">5462</p>
+          <div>
+            <img src="./images/icon-up.svg" alt="icon">
+            <p class="followers-diff-text-green fw-700">2257%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-card card-bg-dark">
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Profile Views</p>
+          <img src="./images/icon-instagram.svg" alt="instagram">
+        </div>
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">52k</p>
+          <div>
+            <img src="./images/icon-up.svg" alt="icon">
+            <p class="followers-diff-text-green fw-700">1375%</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="big-card youtube">
-      <div>
-        <img src="./images/icon-youtube.svg" alt="facebook">
-        <p class="dark-mode-desaturated-blue fw-700">Nathan F.</p>
-      </div>
-      <div>
-        <p class="dark-theme-white fw-700 followers-number">1044</p>
-        <p class="dark-mode-desaturated-blue followers-text">SUBSCRIBERS</p>
-      </div>
-      <div>
-        <img src="./images/icon-down.svg" alt="icon">
-        <p class="followers-diff-text-red">99 Today</p>
-      </div>
-    </div>
-  </div>
+    <div class="overview-card-container">
 
-  <div class="overview-container">
-    <h1 class="dark-theme-white fw-700">Overview - Today</h1>
-  </div>
+      <div class="small-card card-bg-dark">
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">117</p>
+          <div>
+            <img src="./images/icon-up.svg" alt="icon">
+            <p class="followers-diff-text-green fw-700">303%</p>
+          </div>
+        </div>
+      </div>
 
-  <div class="overview-card-container">
-    <div>
-      <p>Page Views</p>
-      <img src="" alt="">
-    </div>
-    <div>
-      <p>87</p>
-      <div>
-        <img src="" alt="">
-        <p>3%</p>
+      <div class="small-card card-bg-dark">
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Likes</p>
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">507</p>
+          <div>
+            <img src="./images/icon-up.svg" alt="icon">
+            <p class="followers-diff-text-green fw-700">553%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-card card-bg-dark">
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Likes</p>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">107</p>
+          <div>
+            <img src="./images/icon-down.svg" alt="icon">
+            <p class="followers-diff-text-red fw-700">19%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-card card-bg-dark">
+        <div>
+          <p class="dark-mode-desaturated-blue fw-700">Total Views</p>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div>
+          <p class="followers-number-small fw-700 dark-theme-text-white">1047</p>
+          <div>
+            <img src="./images/icon-down.svg" alt="icon">
+            <p class="followers-diff-text-red fw-700">12%</p>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 
 

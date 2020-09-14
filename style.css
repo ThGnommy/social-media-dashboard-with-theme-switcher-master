@@ -3,7 +3,10 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    background: hsl(230, 17%, 14%);
+}
+
+#container {
+    overflow: auto;
 }
 
 h1 {
@@ -11,8 +14,7 @@ h1 {
 }
 
 .header-container {
-    background-color: hsl(232, 19%, 15%);
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -81,7 +83,6 @@ h1 {
 
 .big-card {
     display: flex;
-    background: hsl(228, 28%, 20%);
     border-radius: 5px;
     width: 250px;
     height: 230px;
@@ -206,7 +207,6 @@ h1 {
 .instagram {
     width: 250px;
     height: 230px;
-    background: hsl(228, 28%, 20%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -248,12 +248,12 @@ h1 {
 }
 
 .followers-diff-text-green {
-    margin-left: 5px;
+    margin-left: 3px;
     color: hsl(163, 72%, 41%);
 }
 
 .followers-diff-text-red {
-    margin-left: 5px;
+    margin-left: 3px;
     color: hsl(356, 69%, 56%)
 }
 
@@ -262,13 +262,153 @@ h1 {
     max-width: 1440px;
 }
 
+.overview-card-container {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.small-card {
+    display: flex;
+    border-radius: 5px;
+    width: 250px;
+    height: 125px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.small-card:hover {
+    background: hsl(229, 27%, 25%);
+}
+
+.small-card div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.small-card>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.small-card p+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.followers-number-small {
+    font-size: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1100px) {
+
+    .big-card.facebook,
+    .big-card.twitter,
+    .big-card.youtube {
+        margin: 1rem;
+    }
+
+    .instagram-wrap {
+        margin: 1rem;
+    }
+
+    .small-card {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-content {
+        padding: 2rem;
+        max-width: 1440px;
+    }
+
+    hr {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .toggle-mode {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .big-card.facebook,
+    .big-card.twitter,
+    .big-card.youtube {
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .instagram-wrap {
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .instagram {
+        width: 100%;
+    }
+
+    .small-card {
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .small-card div:nth-child(1) {
+        width: 90%;
+    }
+
+    .small-card>div:nth-child(2) {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
 /* THEME CLASSES */
 
 .fw-700 {
     font-weight: 700;
 }
 
-.dark-theme-white {
+/* THEME DARK */
+
+.background-dark {
+    background: hsl(230, 17%, 14%)
+}
+
+.background-dark-top {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.dark-theme-text-white {
     color: hsl(0, 0%, 100%);
 }
 
@@ -276,7 +416,31 @@ h1 {
     color: hsl(228, 34%, 66%);
 }
 
+.card-bg-dark {
+    background: hsl(228, 28%, 20%);
+}
 
+/* THEME WHITE */
+
+.background-white {
+    background: hsl(0, 0%, 100%) !important;
+}
+
+.background-white-top {
+    background-color: hsl(0, 0%, 100%) !important;
+}
+
+.card-bg-white {
+    background-color: hsl(227, 47%, 96%) !important;
+}
+
+.light-mode-text-blue {
+    color: hsl(228, 12%, 44%) !important;
+}
+
+.light-theme-text-blue {
+    color: hsl(230, 17%, 14%) !important;
+}
 
 .attribution {
     font-size: 11px;
