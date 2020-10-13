@@ -8,7 +8,8 @@ const textPrimary = document.querySelectorAll(".dark-mode-desaturated-blue");
 const textSecondary = document.querySelectorAll(".dark-theme-text-white");
 
 
-const handleTheme = () => {
+const handleTheme = (e) => {
+    e.preventDefault()
     toggle.classList.toggle('toggle-button-light')
     toggleContainer.classList.toggle('toggle-container-light')
 
@@ -25,8 +26,5 @@ const toggleClass = (array, classString) => {
     });
 }
 
-const darkTheme = () => {}
-
-const whiteTheme = () => {}
-
+toggle.addEventListener('touchstart', handleTheme)
 toggle.addEventListener('click', handleTheme);
